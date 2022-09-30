@@ -1,0 +1,182 @@
+
+
+
+.carousel-inner, .carousel-item, .carousel-item img{
+    height: 60vh;
+}
+
+.carousel-item img{
+    object-fit: cover;
+}
+
+#showcase .carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#showcase .carousel-caption h5{
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+#showcase .carousel-caption p{
+    font-size: 16px;
+}
+
+/* ########## navbar css ############# */
+
+.header .navbar-nav .nav-link {
+    text-transform: uppercase;
+}
+
+.header li.nav-item.active{
+    border-left: 1px solid orange;
+}
+
+
+/* ########## home icon css ############# */
+.iconThumbnail > i{
+    font-size: 56px;
+}
+
+.iconThumbnail > h3 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+
+/* ########## getReady css ############# */
+
+.getReady, .video{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.getReady{
+    background-image: url(../images/lights.jpg);
+}
+
+.getReady::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ########## video css ############# */
+
+.video{
+    background-image: url(../images/media.jpg);
+}
+
+.video::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.playBtn:link, .playBtn:visited{
+    color: #fff;
+    font-size: 48px;
+}
+
+/* ########## footer css ############# */
+
+.footer{
+    background-color: #000;
+}
+
+/* ########## footer css ############# */
+
+.icons i{
+    font-size: 48px;
+}
+
+/* .item {
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+} */
+
+
+/* ############### sevices pages ############# */
+
+.plans .list-group-item i{
+    font-size: 45px;
+}
+
+.plans .card, #accordion .card{
+    transition: all .4s ease-in-out;
+}
+
+/* ############### FAq pages ############# */
+
+.faq .card{
+    background-color: #444;
+}
+
+.faq a.card-link:link, .faq a.card-link:visited {
+    background-color: #444;
+    color: #fff;
+}
+
+.card-text, .card-text:link, .card-text:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+
+#testimonials .owl-theme .owl-nav{
+    display: none;
+}
+
+
+/* ############### media query css ############# */
+
+@media all and (min-width:768px){
+
+    #testimonials .owl-theme .owl-nav {
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        top: -15px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        transform: rotateY(-50%);
+    }
+    #testimonials button.owl-prev i, #testimonials button.owl-next i{
+        font-size: 50px;
+    }
+    #testimonials button.owl-prev{
+        position: absolute;
+        left: -60px;
+    }
+    #testimonials button.owl-next{
+        position: absolute;
+        right: -60px;
+    }
+
+    .plans .card:hover{
+        transform: translateY(-20px) scale(1.02);
+    }
+
+    #accordion .card:hover{
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+
+
+
